@@ -88,13 +88,13 @@ function css() {
       pkg: pkg
     }))
     .pipe(gulp.dest("./css"))
-    .pipe(gulp.dest('./dist/ccss'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(rename({
       suffix: ".min"
     }))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./css"))
-    .pipe(gulp.dest('./dist/ccss'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(browsersync.stream());
 }
 

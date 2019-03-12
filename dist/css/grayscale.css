@@ -1,7 +1,6 @@
 /*!
- * Start Bootstrap - Grayscale v5.0.5 (https://startbootstrap.com/template-overviews/grayscale)
+ * Mighty Properties - Grayscale v5.0.5 (https://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
 #mainNav {
@@ -12,8 +11,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #ac9a87;
+  border: 1px solid #ac9a87;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -74,15 +73,15 @@
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #ac9a87;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #88745e;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #ac9a87;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #ac9a87;
   }
 }
 
@@ -150,26 +149,27 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: #ac9a87;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #978169;
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: #978169;
   color: white;
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: #88745e !important;
 }
 
 .about-section {
   padding-top: 10rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  padding-bottom: 5rem;
 }
 
 .about-section p {
@@ -187,7 +187,7 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #ac9a87;
   }
 }
 
@@ -201,7 +201,7 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #ac9a87;
     border-width: .25rem;
     width: 30%;
   }
@@ -235,7 +235,7 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #ac9a87;
 }
 
 .contact-section .card h4 {
@@ -246,7 +246,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #ac9a87;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -273,18 +273,28 @@
   color: #fff;
 }
 
+.faq-section {
+  padding-top: 10rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(25%, rgba(22, 22, 22, 0.6)), color-stop(50%, rgba(22, 22, 22, 0.5)));
+  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.6) 25%, rgba(22, 22, 22, 0.5) 50%);
+}
+
+.faq-section p {
+  margin-bottom: 5rem;
+}
+
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
 }
 
 a {
-  color: #64a19d;
+  color: #ac9a87;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #3c6360;
+  color: #796754;
 }
 
 .bg-black {
@@ -292,11 +302,11 @@ a:focus, a:hover {
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: #ac9a87 !important;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: #ac9a87 !important;
 }
 
 footer {
