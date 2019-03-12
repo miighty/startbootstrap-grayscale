@@ -175,12 +175,6 @@
   margin-bottom: 5rem;
 }
 
-.faq-section {
-  padding-top: 10rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.7)), to(rgba(22, 22, 22, 0.6)));
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.7) 75%, rgba(22, 22, 22, 0.6) 100%);
-}
-
 .projects-section {
   padding: 10rem 0;
 }

@@ -18,9 +18,8 @@ const pkg = require('./package.json');
 
 // Set the banner content
 const banner = ['/*!\n',
-  ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+  ' * Mighty Properties - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
   ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
   ' */\n',
   '\n'
 ].join('');
@@ -51,19 +50,23 @@ function clean() {
 function modules() {
   // Bootstrap
   var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
-    .pipe(gulp.dest('./vendor/bootstrap'));
+    .pipe(gulp.dest('./vendor/bootstrap'))
+    .pipe(gulp.dest('./dist/vendor/bootstrap'));
   // Font Awesome
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
-    .pipe(gulp.dest('./vendor'));
+    .pipe(gulp.dest('./vendor'))
+    .pipe(gulp.dest('./dist/vendor'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
-    .pipe(gulp.dest('./vendor/jquery-easing'));
+    .pipe(gulp.dest('./vendor/jquery-easing'))
+    .pipe(gulp.dest('./dist/vendor/jquery-easing'));
   // jQuery
   var jquery = gulp.src([
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
-    .pipe(gulp.dest('./vendor/jquery'));
+    .pipe(gulp.dest('./vendor/jquery'))
+    .pipe(gulp.dest('./dist/vendor/jquery'));
   return merge(bootstrap, fontAwesome, jquery, jqueryEasing);
 }
 
@@ -85,11 +88,13 @@ function css() {
       pkg: pkg
     }))
     .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest('./dist/ccss'))
     .pipe(rename({
       suffix: ".min"
     }))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest('./dist/ccss'))
     .pipe(browsersync.stream());
 }
 
@@ -110,6 +115,7 @@ function js() {
       suffix: '.min'
     }))
     .pipe(gulp.dest('./js'))
+    .pipe(gulp.dest('./dist/js'))
     .pipe(browsersync.stream());
 }
 
